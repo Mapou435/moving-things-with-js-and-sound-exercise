@@ -36,17 +36,22 @@ function moveDodgerDown() {
 
         if (bottom > 0) { 
           dodger.style.bottom = `${bottom - 1}px`; // Move dodger down by -1px kan ændres til 10px ved at ændre "-1"
+        
         }}  
 
 document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") {
         moveDodgerLeft();
+        playSoundOnMovement()
     } else if (e.key === "ArrowRight") {
         moveDodgerRight();
+        playSoundOnMovement()
     } else if (e.key === "ArrowUp") {
         moveDodgerUp();
+        playSoundOnMovement()
     } else if (e.key === "ArrowDown") {
         moveDodgerDown();
+        playSoundOnMovement()
     }
   });
 
