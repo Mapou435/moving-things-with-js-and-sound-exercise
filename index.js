@@ -28,7 +28,17 @@ function moveDodgerUp() {
         dodger.style.bottom = `${bottom + 10}px`;
     }}
 
-    document.addEventListener("keydown", function (e) {
+  
+
+function moveDodgerDown() {
+    const bottomNumbers = dodger.style.bottom.replace("px", ""); // unchanged
+    const bottom = parseInt(bottomNumbers); // unchanged
+
+        if (bottom > 0) { 
+          dodger.style.bottom = `${bottom - 1}px`; // Move dodger down by -1px kan ændres til 10px ved at ændre "-1"
+        }}  
+
+document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") {
         moveDodgerLeft();
     } else if (e.key === "ArrowRight") {
@@ -38,14 +48,11 @@ function moveDodgerUp() {
     } else if (e.key === "ArrowDown") {
         moveDodgerDown();
     }
-
-function moveDodgerDown() {
-    const bottomNumbers = dodger.style.bottom.replace("px", ""); // unchanged
-    const bottom = parseInt(bottomNumbers); // unchanged
-
-        if (bottom > 0) { 
-          dodger.style.bottom = `${bottom - 1}px`; // Move dodger down by -1px kan ændres til 10px ved at ændre "-1"
-        }}
   });
 
+// Audio functions below
 
+function playMovementSound() {
+    movementSound.currentTime = 0; // genstarter lyden
+    movementSound.play();
+  }
