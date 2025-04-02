@@ -64,5 +64,8 @@ function playMovementSound() {
   }
 
   //game over function
-const gameoverSound = document.getElementById("gameOverSound");
-
+const gameOverSound = document.getElementById("gameOverSound");
+function playGameOverSound() {
+    gameOverSound.currentTime = 0;
+    gameOverSound.play();
+  }
