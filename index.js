@@ -36,4 +36,12 @@ function moveDodgerUp() {
     } else if (e.key === "ArrowDown") {
         moveDodgerDown();
     }
+
+function moveDodgerDown() {
+    const bottomNumbers = dodger.style.bottom.replace("px", ""); // unchanged
+    const bottom = parseInt(bottomNumbers); // unchanged
+
+        if (bottom > 0) { 
+          dodger.style.bottom = `${bottom - 1}px`; // Move dodger down by -1px
+        }}
   });
