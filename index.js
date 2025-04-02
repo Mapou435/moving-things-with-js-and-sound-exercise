@@ -78,3 +78,10 @@ function playGameOverSound() {
     gameOverSound.currentTime = 0;
     gameOverSound.play();
   }
+
+function setDodgerToMiddle() {
+    const containerWidth = 400; // bredde på containeren
+    const containerHeight = 400; // højde på containeren
+    const dodgerHeight = 40; // højde på dodgeren
+}
+  setDodgerToMiddle();
