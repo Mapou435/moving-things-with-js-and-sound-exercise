@@ -79,18 +79,7 @@ function playGameOverSound() {
     gameOverSound.play();
   }
 
-function setDodgerToMiddle() {
-    const containerWidth = 400; // bredde på containeren
-    const containerHeight = 400; // højde på containeren
-    const dodgerHeight = 40; // højde på dodgeren
-
-    const middleLeft = (containerWidth - dodgerWidth) / 2; // beregner midten positionen
-    const middleBottom = (containerHeight - dodgerHeight) / 2; 
-    dodger.style.left = `${middleLeft}px`; // konfigurerer dodgerens position
-    dodger.style.bottom = `${middleBottom}px`;
-}
-
-function setDodgerToMiddle() {
+  function setDodgerToMiddle() {
     const containerWidth = 400;
     const containerHeight = 400;
     const dodgerHeight = 40;
@@ -103,4 +92,5 @@ function setDodgerToMiddle() {
     dodger.style.left = `${middleLeft}px`;
     dodger.style.bottom = `${middleBottom}px`;
   }
+
   setDodgerToMiddle();
