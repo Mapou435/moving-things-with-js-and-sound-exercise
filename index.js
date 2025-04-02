@@ -31,6 +31,7 @@ function moveDodgerUp() {
         dodger.style.bottom = `${bottom + 10}px`;
     } else {
         playGameOverSound(); // spiller gameover lyden når dodgeren rammer vægen
+        console.log("Game Over!"); // til debugging
     }}  
 
   
