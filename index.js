@@ -60,4 +60,5 @@ document.addEventListener("keydown", function (e) {
 function playMovementSound() {
     movementSound.currentTime = 0; // genstarter lyden
     movementSound.play();
+    console.log("Sound played"); // til debugging
   }
