@@ -62,3 +62,7 @@ function playMovementSound() {
     movementSound.play();
     console.log("Sound played"); // til debugging
   }
+
+  //game over function
+const gameoverSound = document.getElementById("gameOverSound");
+
