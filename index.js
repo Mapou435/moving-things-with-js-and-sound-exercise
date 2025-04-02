@@ -42,16 +42,16 @@ function moveDodgerDown() {
 document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") {
         moveDodgerLeft();
-        playSoundOnMovement()
+        playMovementSound()
     } else if (e.key === "ArrowRight") {
         moveDodgerRight();
-        playSoundOnMovement()
+        playMovementSound()
     } else if (e.key === "ArrowUp") {
         moveDodgerUp();
-        playSoundOnMovement()
+        playMovementSound()
     } else if (e.key === "ArrowDown") {
         moveDodgerDown();
-        playSoundOnMovement()
+        playMovementSound()
     }
   });
 
