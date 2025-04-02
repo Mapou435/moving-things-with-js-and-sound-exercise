@@ -20,6 +20,11 @@ function moveDodgerLeft() {
     
 function moveDodgerUp() {
     const bottomNumbers = dodger.style.bottom.replace("px", "");
+    const bottom = parseInt(bottomNumbers, 10); //baseret på moveDodgerLeft function
+
+    if (bottom < 360) { // Gør så dodger ikke kan forlade boksen i toppen
+        dodger.style.bottom = `${bottom + 10}px`;
+    }
 
     document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") {
