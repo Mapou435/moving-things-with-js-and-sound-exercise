@@ -1,4 +1,6 @@
 const dodger = document.getElementById("dodger");
+const movementSound = document.getElementById("movementSound");
+
 
 function moveDodgerLeft() {
     const leftNumbers = dodger.style.left.replace("px", "");
@@ -42,6 +44,8 @@ function moveDodgerDown() {
     const bottom = parseInt(bottomNumbers); // unchanged
 
         if (bottom > 0) { 
-          dodger.style.bottom = `${bottom - 1}px`; // Move dodger down by -1px
+          dodger.style.bottom = `${bottom - 1}px`; // Move dodger down by -1px kan ændres til 10px ved at ændre "-1"
         }}
   });
+
+
