@@ -44,6 +44,7 @@ function moveDodgerDown() {
         
         } else {
             playGameOverSound(); // spiller gameover lyden når dodgeren rammer vægen
+            console.log("Game Over!"); // til debugging
         }}
 
 document.addEventListener("keydown", function (e) {
