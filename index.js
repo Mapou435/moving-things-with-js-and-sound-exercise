@@ -3,6 +3,7 @@ const dodger = document.getElementById("dodger");
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") {
     moveDodgerLeft();
+    console.log("Left key pressed");
   }
 
   if (e.key === "ArrowRight") {
